@@ -11,6 +11,6 @@ $ sudo docker build -t ${USER}/dnsmasq .
 
 ### 컨테이너 생성 ###
 ```
-$ sudo docker run -d --name dnsmasq -p <IP ADDRESS>:53:53 \
+$ sudo docker run -d --name dnsmasq -p <IP ADDRESS>:53:53/udp \
 -v /path/to/althosts:/etc/althosts ${USER}/dnsmasq
 ```
